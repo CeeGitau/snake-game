@@ -1,4 +1,3 @@
-#Snake Tutorial Python
 import math
 import random
 from tkinter.tix import COLUMN
@@ -132,7 +131,6 @@ def drawGrid (w, rows, surface) :
         pygame.draw.line(surface, (255, 255, 255), (x, 0), (x, w)) #colour white, start position of line and end position of line
         pygame.draw.line(surface, (255, 255, 255), (0, y), (w, y))
 
-
 def redrawWindow (surface) :
     global rows, width, s, snack
     surface.fill((0, 0, 0))
@@ -154,7 +152,6 @@ def randomSnack (rows, item) :
 
     return(x, y)
         
-
 def message_box (subject, content):
     root = tk.Tk()
     root.attributes('-topmost', True)
@@ -164,7 +161,6 @@ def message_box (subject, content):
         root.destroy()
     except:
         pass
-
 
 #main loop
 def main():
@@ -193,8 +189,6 @@ def main():
                 s.reset((10, 10)) #resets the snake to the starting position
                 break
 
-
         redrawWindow(win)
-
         
 main()
