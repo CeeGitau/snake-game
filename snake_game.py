@@ -196,7 +196,5 @@ def main():
 
         redrawWindow(win)
 
-    pass
-
-
+        
 main()
